@@ -1,7 +1,8 @@
 import faker from 'faker';
-
-export class User {
+import { MapPoint } from './Map';
+export class User implements MapPoint {
   name: string;
+  color: string = 'red';
   location: {
     lat: number;
     lng: number;

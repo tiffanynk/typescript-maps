@@ -1,8 +1,10 @@
 import faker from 'faker';
+import { MapPoint } from './Map';
 
 export class Company {
   name: string;
   catchPhrase: string;
+  color: string = 'blue';
   location: {
     lat: number;
     lng: number;

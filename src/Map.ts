@@ -1,9 +1,10 @@
-interface MapPoint {
+export interface MapPoint {
   location: {
     lat: number;
     lng: number;
   };
   markerContent(): string;
+  color: string;
 }
 
 export class Map {
